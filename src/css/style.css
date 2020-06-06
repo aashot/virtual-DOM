@@ -1,147 +1,172 @@
-html, body * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+  background: black;
+  font-family: 'Varela', sans-serif;
+}
+
+.container {
+  margin: 15% auto;
+}
+
+.glitch {
+  color: white;
+  font-size: 100px;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(93px, 9999px, 71px, 0);
   }
-  
-  body {
-    background-color: #1f2c38;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  5% {
+    clip: rect(90px, 9999px, 89px, 0);
   }
-  
-  ul {
-    list-style: none;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    margin-left: -125px;
-    margin-right: -180px;
+  10% {
+    clip: rect(55px, 9999px, 32px, 0);
   }
-  
-  h1, span, a {
-    z-index: 99;
-    position: relative;
+  15% {
+    clip: rect(68px, 9999px, 90px, 0);
   }
-  
-  ul li {
-    display: block;
-    position: absolute;
-    background-color: #fefefe;
-    width: 250px;
-    height: 320px;
-    top: 0;
-    left: 0;
-    transform: rotate(10deg) skew(-60deg);
-    transform-origin: bottom center;
-    box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
-    transition: .4s;
-    z-index: -1;
-    overflow: hidden;
+  20% {
+    clip: rect(68px, 9999px, 36px, 0);
   }
-  
-  ul li:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 10px;
-    background: rgba(40,255,247);
-    background: -moz-linear-gradient(45deg, rgba(40,255,247,1) 0%, rgba(129,40,255,1) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(40,255,247,1) 0%, rgba(129,40,255,1) 100%);
-    background: linear-gradient(45deg, rgba(40,255,247,1) 0%, rgba(129,40,255,1) 100%);
-    transition: .6s;
+  25% {
+    clip: rect(15px, 9999px, 12px, 0);
   }
-  
-  ul li h1 {
-    font-size: 7.3em;
-    background: -webkit-linear-gradient(#28fff7, #8128ff);
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent; 
-    margin-top:50px;
-    transition:.4s;
+  30% {
+    clip: rect(27px, 9999px, 3px, 0);
   }
-  
-  ul li a {
-    display: inline-block;
-    padding: 10px 20px;
-    top: 40px;
-    border: 1px solid #fff;
-    transition: all .7s cubic-bezier(0.68,0,0.265, 1.55);
-    color: #fff;
-    text-decoration: none;
-    transform: scale(0);
-    position: relative;
-    overflow: hidden;
+  35% {
+    clip: rect(68px, 9999px, 84px, 0);
   }
-  
-  ul li a:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0%;
-    transform-origin: center top;
-    background-color: rgba(0,0,0,0.3);
-    border-radius: 100% 0 0 0;
-    transition: all 0.6 linear;
+  40% {
+    clip: rect(20px, 9999px, 38px, 0);
   }
-  
-  ul li:hover a:hover:after {
-    height: 100%;
-    width: 100%;
-    position: absolute;
+  45% {
+    clip: rect(75px, 9999px, 30px, 0);
   }
-  
-  ul li a:hover {
-    border-color: transparent;
-    transform: scale(1.2) !important;
+  50% {
+    clip: rect(80px, 9999px, 52px, 0);
   }
-  
-  ul li:nth-child(1) {
-    transform: rotate(20deg) skew(-20deg) translate(10px, 10px);
+  55% {
+    clip: rect(6px, 9999px, 56px, 0);
   }
-  
-  ul li:nth-child(2) {
-    transform: rotate(20deg) skew(-20deg) translate(0px, 0px);
+  60% {
+    clip: rect(40px, 9999px, 48px, 0);
   }
-  
-  ul li:nth-child(3) {
-    transform: rotate(20deg) skew(-20deg) translate(-10px, -10px);
+  65% {
+    clip: rect(22px, 9999px, 3px, 0);
   }
-  
-  ul:hover li:nth-child(1) {
-    transform: rotate(40deg) skew(0) translate(100px, 0);
+  70% {
+    clip: rect(4px, 9999px, 14px, 0);
   }
-  
-  ul:hover li:nth-child(2) {
-    transform: rotate(0deg) skew(0);
+  75% {
+    clip: rect(98px, 9999px, 73px, 0);
   }
-  
-  ul:hover li:nth-child(3) {
-    transform: rotate(-40deg) skew(0) translate(-100px, 0);
+  80% {
+    clip: rect(60px, 9999px, 18px, 0);
   }
-  
-  ul:hover li:hover {
-    z-index: 9;
-    background-color: #0e1826;
-    box-shadow: 10px 10px 40px rgba(0,0,0,0.5);
+  85% {
+    clip: rect(16px, 9999px, 38px, 0);
   }
-  
-  ul:hover li:hover a {
-    top: 30px;
-    transform: scale(1);
+  90% {
+    clip: rect(11px, 9999px, 41px, 0);
   }
-  
-  ul:hover li:hover:after {
-    height: 100%;
+  95% {
+    clip: rect(11px, 9999px, 89px, 0);
   }
-  
-  ul:hover li:hover * {
-    color: #fff;
-    background: -webkit-linear-gradient(#fff, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  100% {
+    clip: rect(55px, 9999px, 27px, 0);
   }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(82px, 9999px, 16px, 0);
+  }
+  5% {
+    clip: rect(2px, 9999px, 92px, 0);
+  }
+  10% {
+    clip: rect(74px, 9999px, 46px, 0);
+  }
+  15% {
+    clip: rect(36px, 9999px, 37px, 0);
+  }
+  20% {
+    clip: rect(14px, 9999px, 77px, 0);
+  }
+  25% {
+    clip: rect(18px, 9999px, 59px, 0);
+  }
+  30% {
+    clip: rect(76px, 9999px, 76px, 0);
+  }
+  35% {
+    clip: rect(2px, 9999px, 36px, 0);
+  }
+  40% {
+    clip: rect(30px, 9999px, 45px, 0);
+  }
+  45% {
+    clip: rect(24px, 9999px, 68px, 0);
+  }
+  50% {
+    clip: rect(4px, 9999px, 77px, 0);
+  }
+  55% {
+    clip: rect(46px, 9999px, 29px, 0);
+  }
+  60% {
+    clip: rect(54px, 9999px, 96px, 0);
+  }
+  65% {
+    clip: rect(79px, 9999px, 7px, 0);
+  }
+  70% {
+    clip: rect(64px, 9999px, 58px, 0);
+  }
+  75% {
+    clip: rect(39px, 9999px, 73px, 0);
+  }
+  80% {
+    clip: rect(35px, 9999px, 4px, 0);
+  }
+  85% {
+    clip: rect(79px, 9999px, 51px, 0);
+  }
+  90% {
+    clip: rect(17px, 9999px, 1px, 0);
+  }
+  95% {
+    clip: rect(68px, 9999px, 7px, 0);
+  }
+  100% {
+    clip: rect(75px, 9999px, 86px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}

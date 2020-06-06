@@ -3,10 +3,10 @@ const createElement = virtualNode => {
         return document.createTextNode(virtualNode);
     }
     const rootElement = document.createElement(virtualNode.type);
-    virtualNode.props && Object.keys(virtualNode.props).forEach((key) => {
+    virtualNode.props && Object.keys(virtualNode.props).forEach(key => {
         rootElement.setAttribute(key, virtualNode.props[key]);
     });
-    virtualNode.children.map(createElement).forEach((childElement) => {
+    virtualNode.children.map(createElement).forEach(childElement => {
         rootElement.appendChild(childElement);
     });
     return rootElement;

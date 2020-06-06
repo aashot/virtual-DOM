@@ -10,21 +10,8 @@ const h = (type, props, ...children) => {
 };
 
 export default (
-    <ul>
-        <li>
-            <h1>1</h1>
-            <span>Lorem Ipsum dolor.</span>
-            <a href="#"><span>Clique Aqui</span></a>
-        </li>
-        <li>
-            <h1>2</h1>
-            <span>Lorem Ipsum dolor.</span>
-            <a href="#"><span>Clique Aqui</span></a>
-        </li>
-        <li>
-            <h1>3</h1>
-            <span>Lorem Ipsum dolor.</span>
-            <a href="#"><span>Clique Aqui</span></a>
-        </li>
-    </ul>
+    <div class="container">
+        <div class="glitch" data-text="SUPER">SUPER</div>
+        <div class="glitch" data-text="GLITCH">GLITCH</div>
+    </div>
 );
